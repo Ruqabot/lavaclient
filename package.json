@@ -1,15 +1,14 @@
 {
-    "name": "lavaclient",
-    "version": "4.0.8-rc.1",
+    "name": "lavaclient-fork",
+    "version": "4.0.9",
     "description": "A simple, easy-to-use, and flexible lavalink client for node.js",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": "git@github.com:lavaclient/lavaclient.git",
-    "author": "melike2d <gino@dimensional.fun>",
+    "author": "melike2d <gino@dimensional.fun> (edited by Ruzie <luhamailbox@gmail.com>)",
     "license": "MIT",
     "private": false,
     "scripts": {
-        "docs:gen": "typedoc --theme node_modules/typedoc-scalefast-theme/src",
         "types": "tsc -d",
         "types:bundle": "dts-bundle --name lavaclient --outputAsModuleFolder --main dist/index.d.ts --out ./index.d.ts --removeSource"
     },
@@ -23,20 +22,15 @@
         "node": ">=14.x.x"
     },
     "devDependencies": {
-        "@types/centra": "^2.2.0",
         "@types/node": "^16.11.7",
         "@types/ws": "^8.2.0",
         "@typescript-eslint/eslint-plugin": "^5.3.1",
-        "@typescript-eslint/parser": "^5.3.1",
-        "eslint": "^8.2.0",
-        "typedoc": "^0.22.9",
-        "typedoc-scalefast-theme": "^1.0.3",
-        "typescript": "^4.4.4"
+        "@typescript-eslint/parser": "^5.3.1"
     },
     "dependencies": {
         "@lavaclient/types": "^2.0.11",
-        "centra": "^2.5.0",
         "tiny-typed-emitter": "^2.1.0",
+        "undici": "^5.0.0",
         "ws": "^8.2.3"
     }
 }
